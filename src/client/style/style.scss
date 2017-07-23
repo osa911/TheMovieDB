@@ -1,0 +1,132 @@
+body {
+    background-color: #f4f4f4 !important;
+}
+
+img {
+    height: 100%;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+.movies_content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.movie-card {
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 0 49%;
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.movie-card__content {
+    box-sizing: border-box;
+    padding: 10px 16px 16px 16px;
+}
+
+.movie-card__img {
+    display: flex;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-card__title {
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.movie-card__rate {
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.movie-card__releaseDate,
+.movie-card__genre {
+    color: #666;
+}
+
+.movie-card__content-overview {
+    word-wrap: break-word;
+    white-space: normal;
+    color: #4d4d4d;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    margin-top: 30px;
+}
+
+.pagination {
+    cursor: pointer;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    background-color: #3c3c3c;
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+.search {
+    display: flex;
+    padding: 5px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 22px;
+    color: dimgrey;
+}
+
+.search input,
+form {
+    width: 100%;
+    display: flex;
+}
+
+.movie-card-option {
+    border-top: 1px solid #e3e3e3;
+    bottom: 0;
+    left: 0;
+    padding: 5px 15px 0px 15px;
+}
+
+.movie-card-option a {
+    cursor: pointer;
+}
